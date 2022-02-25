@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   body {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .grid__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+         "first-item first-item"
+         "second-item third-item"
+         "fourth-item third-item"
+         "fifth-item fifth-item";
+   }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767.98px) {
+   body {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .grid__container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+         "first-item"
+         "second-item"
+         "fourth-item"
+         "fifth-item"
+         "third-item";
+   }
+   .grid__item {
+      width: 530px;
+      height: auto;
+   }
+   .quote {
+      right: 24px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   body {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .grid__container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+         "first-item"
+         "second-item"
+         "fourth-item"
+         "fifth-item"
+         "third-item";
+   }
+   .grid__item {
+      width: 327px;
+      min-width: 320px;
+      height: auto;
+   }
+   .quote {
+      right: 24px;
+   }
+}
+
+@media screen and (max-width: 335px) {
+   body {
+      padding: 50px 20px;
+   }
+   .grid__item {
+      width: auto;
+      min-width: auto;
+      height: auto;
+   }
+}
